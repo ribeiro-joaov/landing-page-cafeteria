@@ -4,35 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/css/reset.css"/>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/83f2d1764f.js" crossorigin="anonymous"></script>
     <title>Tulha Cafeteria</title>
   </head>
   <body>
     <header>
       <div class="logo">
-        <img src="assets/images/LOGO COR-teste.png" alt="logo" />
+        <img src="./src/images/LOGO COR-teste.png" alt="logo" />
       </div>
-      <article>
-        <div class="bemvindo">
+    </header>
+    <article>
+      <div class="bemvindo">
+        <img
+          class="img-intro"
+          src="./src/images/frente1-resize.jpg"
+          alt=""
+        />
+        <div class="sobre">
           <h1>Seja bem vindo</h1>
-
-          <img
-            class="img-intro"
-            src="./assets/images/frente1-resize.jpg"
-            alt=""
-          />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptas, quod, quia, voluptates quae voluptatibus quibusdam
-            necessitatibus voluptatem quos quidem nesciunt. Quisquam, quae
-            voluptates. Quisquam, quae voluptates. Quisquam, quae voluptates.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptas, quod, quia, voluptates quae voluptatibus quibusdam
-            necessitatibus voluptatem quos quidem nesciunt. Quisquam, quae
-            voluptates. Quisquam, quae voluptates. Quisquam, quae voluptates.
-          </p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             voluptas, quod, quia, voluptates quae voluptatibus quibusdam
@@ -40,28 +33,59 @@
             voluptates. Quisquam, quae voluptates. Quisquam, quae voluptates.
           </p>
         </div>
-      </article>
-      <article>
-        <div class="receitas">
-          <h2>Receitas</h2>
-
-          <img id="v60" src="./assets/images/v60.jpg" alt="Método V60" />
-          <img
-            id="aeropress"
-            src="./assets/images/aeropress.jpg"
-            alt="Método Aeropress"
-          />
-          <img
-            id="kalita"
-            src="./assets/images/kalita.jpg"
-            alt="Método Kalita"
-          />
+      </div>
+    </article>
+    <article class="receitas">
+      <h2>Nossos métodos favoritos</h2>
+      <div class="container-receitas">
+        
+        <div class="v60">
+        <button class="method">
+          <img id="v60" src="./src/images/v60.jpg" alt="Método V60" />
+        </button>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
         </div>
-      </article>
+        </div>
+        <div class="aeropress">
+        <button class="method">
+          <img id="v60" src="./src/images/aeropress.jpg" alt="Método V60" />
+        </button>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          </div>
+        </div>
+          <div class="kalita">
+        <button class="method">
+          <img id="v60" src="./src/images/kalita.jpg" alt="Método V60" />
+        </button>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+      </div>
+    </article>
+
+    <div class="info">
       <div class="contato">
         <h2>Contato e endereço</h2>
-        <p id="contato">
-          Telefone: (99) 99999-9999 <br /><br />
+        <p class="dados">
+          Telefone: (99) 99999-9999 <br><br>
           Email: Tulhacafeteria@email.com.br
         </p>
         <iframe
@@ -74,26 +98,47 @@
           loading="lazy"
         ></iframe>
       </div>
-
-      <div class="news">
-        <h2>Assine nossa newsletter</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-          Non numquam praesentium rem eveniet dolore alias soluta.
-        </p>
-        <form
-          action="https://formsubmit.co/contato@tulhacafe.com.br"
-          method="POST"
-        >
-          <div class="data">
-            <input type="text" name="name" placeholder="Nome" required /> <br />
-            <br />
-            <input type="email" name="email" placeholder="Email" required />
-            <br />
-            <input type="submit" value="ENVIAR" class="button" />
-          </div>
-        </form>
+        <div class="news-container">
+          <h2>Assine nossa newsletter</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Non numquam praesentium rem eveniet dolore alias soluta.
+          </p>
+          <form
+            action="https://formsubmit.co/contato@tulhacafe.com.br"
+            method="POST">
+                <form action="/action_page.php">
+                  <input type="text" id="fname" name="firstname" placeholder="Nome" required>
+                  <form action="/action_page.php">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+              <input type="submit" value="ENVIAR" class="button" />
+          </form>
+        </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <p>Produzido por João Vitor Ribeiro</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/ribeirojoaovv/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/ribeiro-joaov" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
       </div>
-    </header>
+      
+    <script>
+      var coll = document.getElementsByClassName("method");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

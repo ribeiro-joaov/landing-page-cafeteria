@@ -1,0 +1,35 @@
+@media (max-width: 900px) {
+    article .bemvindo {
+        grid-template-columns: 1fr;
+    }
+    article .bemvindo .img-intro {
+        border-right: none;
+        border-bottom: none;
+    }
+    article .bemvindo .sobre {
+        text-align: center;
+    }
+    .receitas .container-receitas {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .receitas .container-receitas .method #v60, #aeropress, #kalita {
+        margin: 10px;
+        padding: 0;
+    }
+    .info{
+        grid-template-columns: 1fr;
+        max-width: 500px;
+      
+    }
+    .mapa{
+        width: 300px;
+    }
+    .contato{
+        margin: 20px;
+    }
+ 
+    .news-container{
+        margin: 20px;
+    }
+}
