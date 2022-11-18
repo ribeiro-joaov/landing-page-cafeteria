@@ -6,8 +6,12 @@
         border-right: none;
         border-bottom: none;
     }
+    article .bemvindo h1 {
+        font-size: 4rem;
+    }
     article .bemvindo .sobre {
         text-align: center;
+        font-size: 2rem;
     }
     .receitas .container-receitas {
         grid-template-columns: 1fr;
