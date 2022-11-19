@@ -87,7 +87,7 @@ article .bemvindo .sobre {
   all: unset;
   cursor: pointer;
 }
-.receitas .container-receitas .method button:hover {
+.receitas .container-receitas .method:hover {
   opacity: 0.8;
   transition: 0.03s;
 }
