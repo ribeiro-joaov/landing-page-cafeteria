@@ -88,6 +88,7 @@ article .bemvindo .sobre {
   cursor: pointer;
 }
 .receitas .container-receitas .method:hover {
+  transform: scale(1.1);
   opacity: 0.8;
   transition: 0.03s;
 }
